@@ -2,7 +2,7 @@ package at.kogler.structuredProgramming.exercise01;
 
 import java.util.Random;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         Random RNG = new Random();

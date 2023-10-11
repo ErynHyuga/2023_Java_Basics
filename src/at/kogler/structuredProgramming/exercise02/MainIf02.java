@@ -4,7 +4,7 @@ import java.util.Random;
 
 //import static com.sun.beans.introspect.PropertyInfo.Name.bound;
 
-public class main_if_2 {
+public class MainIf02 {
     public static void main(String[] args) {
         Random RNG = new Random();
         int RN_01 = RNG.nextInt(100);

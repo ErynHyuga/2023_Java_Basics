@@ -1,6 +1,6 @@
 package at.kogler.structuredProgramming.exercise06;
 import java.util.Random;
-public class main_while {
+public class MainWhile {
     public static void main(String[] args) {
         boolean checkerTrue = true;
 

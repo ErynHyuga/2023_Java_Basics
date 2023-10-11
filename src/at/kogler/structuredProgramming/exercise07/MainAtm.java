@@ -2,7 +2,7 @@ package at.kogler.structuredProgramming.exercise07;
 
 import java.util.Scanner;
 
-public class main_atm {
+public class MainAtm {
     public static void main(String[] args) {
         boolean operationGreaterLoop = true;
         int moneySafeFile = 0;

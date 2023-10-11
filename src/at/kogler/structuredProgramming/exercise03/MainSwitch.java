@@ -1,6 +1,6 @@
 package at.kogler.structuredProgramming.exercise03;
 import java.util.Random;
-public class main_switch {
+public class MainSwitch {
     public static void main(String[] args) {
 
         Random RNG = new Random();
