@@ -1,4 +1,4 @@
-package at.kogler.exercise03;
+package at.kogler.structuredProgramming.exercise03;
 import java.util.Random;
 public class main_switch {
     public static void main(String[] args) {

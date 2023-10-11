@@ -1,4 +1,4 @@
-package at.kogler.exercise08;
+package at.kogler.structuredProgramming.exercise08;
 
 import java.util.Random;
 

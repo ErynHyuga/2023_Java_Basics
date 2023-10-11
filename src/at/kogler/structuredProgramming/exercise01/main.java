@@ -1,6 +1,5 @@
-package at.kogler.exercise01;
+package at.kogler.structuredProgramming.exercise01;
 
-import java.sql.SQLOutput;
 import java.util.Random;
 
 public class main {

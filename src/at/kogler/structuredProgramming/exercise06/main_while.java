@@ -1,4 +1,4 @@
-package at.kogler.exercise06;
+package at.kogler.structuredProgramming.exercise06;
 import java.util.Random;
 public class main_while {
     public static void main(String[] args) {

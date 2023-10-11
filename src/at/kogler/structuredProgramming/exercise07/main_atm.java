@@ -1,4 +1,4 @@
-package at.kogler.exercise07;
+package at.kogler.structuredProgramming.exercise07;
 
 import java.util.Scanner;
 
