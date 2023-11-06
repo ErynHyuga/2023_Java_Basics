@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class MainWordGuesser {
     public static void main(String[] args) {
-        String[] words = {"Agrennt", "Grindig", "Hobler", "Irrer", "Fonsi", "reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "Khal", "Maekar the Anvil", "Grindiger Fonsi", "WE ARE THE HAMMER"};
+        String[] words = {"Agrennt", "Grindig", "Hobler", "Irrer", "Fonsi", "reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "Khal", "Maekar the Anvil", "Grindiger Fonsi", "WE ARE THE HAMMER", "Primaerschluessel"};
         Random random = new Random();
         String wordToGuess = words[random.nextInt(words.length)];
         char[] guessedWordArray = new char[wordToGuess.length()];
