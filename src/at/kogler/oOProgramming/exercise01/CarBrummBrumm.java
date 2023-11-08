@@ -1,4 +1,5 @@
 package at.kogler.oOProgramming.exercise01;
+import java.util.Scanner;
 
 public class CarBrummBrumm {
     public String carID;
@@ -8,6 +9,13 @@ public class CarBrummBrumm {
     public int carFuelInStorage;
     public int carMaxFuelStorage;
     int speed;
+
+    public void carMaxFuelChecker(){
+        if (carFuelInStorage > carMaxFuelStorage){
+            carFuelInStorage = carMaxFuelStorage;
+        }
+    }
+
     public void carBeFastAsFuckBoyyyyAKADriving() {
         if(carFuelInStorage > 0){
             System.out.println("'Cause I'm crazy, hot and ready, but you like it\n" +
@@ -23,9 +31,18 @@ public class CarBrummBrumm {
         System.out.println("I Break");
     }
     public void carGoSuperBoostModeZefix(){
-        System.out.println("very fast");
+        if (carMaxFuelStorage / 10 < carFuelInStorage ) {
+            System.out.println("very fast");
+
+        }
+
     }
     public void carGoHonk(){
-        System.out.println("Tu-Tu-Du-Du");
+        var scanInput = new Scanner(System.in);
+        int inputHonkRepitition = Integer.parseInt(scanInput.next());
+        for (){
+            System.out.println("Tu-Tu-Du-Du");
+        }
+
     }
 }
