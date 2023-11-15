@@ -5,8 +5,8 @@ import at.kogler.oOProgramming.exercise01.CarBrummBrumm;
 public class MainFirstObject {
 
     public static void main(String[] args) {
-        CarBrummBrumm car1 = new CarBrummBrumm(1,27,100,"PE125874", "Peugeot", "Munkili Bru");
-        CarBrummBrumm car2 = new CarBrummBrumm(12   ,41,167,"PO12545", "Porsche", "Fiery Rot");
+        CarBrummBrumm car1 = new CarBrummBrumm(1, 27, 100, "PE125874", "Peugeot", "Munkili Bru");
+        CarBrummBrumm car2 = new CarBrummBrumm(12, 41, 167, "PO12545", "Porsche", "Fiery Rot");
 
 
         car1.carBeFastAsFuckBoyyyyAKADriving();

@@ -11,7 +11,7 @@ public class CarBrummBrumm {
     public int carMaxFuelStorage;
     public int speed;
 
-    public CarBrummBrumm(int carFuelConsumption, int carFuelInStorage, int carMaxFuelStorage, String carID, String carBrand, String carColour){
+    public CarBrummBrumm(int carFuelConsumption, int carFuelInStorage, int carMaxFuelStorage, String carID, String carBrand, String carColour) {
         this.carColour = carColour;
         this.carBrand = carBrand;
         this.carID = carID;
@@ -58,14 +58,16 @@ public class CarBrummBrumm {
         }
 
     }
-    public void carGetRemainingRange () {
+
+    public void carGetRemainingRange() {
         int remainingRange = carMaxFuelStorage - carFuelConsumption;
-        if(remainingRange < 0){
+        if (remainingRange < 0) {
             carAlarm();
         }
-        System.out.println(remainingRange * 100 +" km kann man noch fahren");
+        System.out.println(remainingRange * 100 + " km kann man noch fahren");
     }
-    public void carAlarm (){
+
+    public void carAlarm() {
         System.out.println("ALAAAAAAAAAAAAAAAAAAAAAAAAAAARM");
     }
 }
