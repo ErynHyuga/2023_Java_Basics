@@ -1,35 +1,30 @@
 package at.kogler.oOProgramming.exercise01;
 
+import at.kogler.oOProgramming.exercise01.CarParts.CarEngine;
+import at.kogler.oOProgramming.exercise01.CarParts.CarTank;
+
 import java.util.Scanner;
 
 public class CarBrummBrumm {
+
+    private CarEngine engine;
     public String carID;
     public String carBrand;
     public String carColour;
-    public int carFuelConsumption;
-    public int carFuelInStorage;
-    public int carMaxFuelStorage;
+
     public int speed;
 
-    public CarBrummBrumm(int carFuelConsumption, int carFuelInStorage, int carMaxFuelStorage, String carID, String carBrand, String carColour) {
+    public CarBrummBrumm(CarEngine engine, CarTank tank, String carID, String carBrand, String carColour) {
+        this.engine = engine;
         this.carColour = carColour;
         this.carBrand = carBrand;
         this.carID = carID;
-        this.carMaxFuelStorage = carMaxFuelStorage;
-        this.carFuelInStorage = carFuelInStorage;
         this.carFuelConsumption = carFuelConsumption;
     }
 
-
-    public void carMaxFuelChecker() {
-        if (carFuelInStorage > carMaxFuelStorage) {
-            carFuelInStorage = carMaxFuelStorage;
-        }
-    }
-
-    public void carBeFastAsFuckBoyyyyAKADriving() {
+    public void carGottaGoFastAKADriving() {
         if (carFuelInStorage > 0) {
-            System.out.println("I'm gonna step on the gas" + "Gas, gas, gas");
+            System.out.println("I'm gonna step on the gas \n" + "Gas, gas, gas");
             this.carFuelInStorage = this.carFuelInStorage - carFuelConsumption;
         } else {
             System.out.println("Car Cannot Move. Not Enough Fuel");
