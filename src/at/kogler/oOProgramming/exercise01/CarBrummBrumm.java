@@ -7,19 +7,40 @@ import java.util.Scanner;
 
 public class CarBrummBrumm {
 
+    private int carFuelConsumption;
+    private int carFuelInStorage;
+    private CarTank fuelRemaining;
     private CarEngine engine;
+    private CarEngine engineFuelConsumption;
+    private CarTank maxFuelReserve;
+    private CarTank tank;
     public String carID;
     public String carBrand;
     public String carColour;
+    public int carMaxFuelReserve;
 
     public int speed;
 
+
     public CarBrummBrumm(CarEngine engine, CarTank tank, String carID, String carBrand, String carColour) {
         this.engine = engine;
+        this.tank = tank;
         this.carColour = carColour;
         this.carBrand = carBrand;
         this.carID = carID;
-        this.carFuelConsumption = carFuelConsumption;
+        getCarFuelConsumption();
+        getCarFuelInStorage();
+        getCarMaxFuelReserve();
+
+    }
+    public CarEngine getCarFuelConsumption() {
+        return engineFuelConsumption;
+    }
+    public CarTank getCarMaxFuelReserve(){
+        return maxFuelReserve;
+    }
+    public CarTank getCarFuelInStorage(){
+        return fuelRemaining;
     }
 
     public void carGottaGoFastAKADriving() {
@@ -36,7 +57,7 @@ public class CarBrummBrumm {
     }
 
     public void carGoSuperBoostModeZefix() {
-        if (carMaxFuelStorage / 10 < carFuelInStorage) {
+        if (carMaxFuelReserve / 10 < carFuelInStorage) {
             System.out.println("very fast");
         } else {
             System.out.println("Not Enough Fuel for this");
@@ -55,7 +76,7 @@ public class CarBrummBrumm {
     }
 
     public void carGetRemainingRange() {
-        int remainingRange = carMaxFuelStorage - carFuelConsumption;
+        int remainingRange = carMaxFuelReserve - carFuelConsumption;
         if (remainingRange < 0) {
             carAlarm();
         }

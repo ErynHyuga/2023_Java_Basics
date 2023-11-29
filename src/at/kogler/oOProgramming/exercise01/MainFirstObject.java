@@ -18,7 +18,7 @@ public class MainFirstObject {
         car1.carGoHonk();
         car1.carGoSlowAKABreak();
         car1.carGoSuperBoostModeZefix();
-        tank1.carMaxFuelChecker();
+        tank1.carMaxFuelCheck();
         car1.carGetRemainingRange();
 
 
@@ -26,7 +26,7 @@ public class MainFirstObject {
         car2.carGoHonk();
         car2.carGoSlowAKABreak();
         car2.carGoSuperBoostModeZefix();
-        tank2.carMaxFuelChecker();
+        tank2.carMaxFuelCheck();
         car2.carGetRemainingRange();
     }
 }

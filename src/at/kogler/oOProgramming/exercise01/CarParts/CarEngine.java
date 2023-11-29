@@ -3,6 +3,7 @@ package at.kogler.oOProgramming.exercise01.CarParts;
 public class CarEngine {
     public CarEngine(int horsepower, fuelType fuelType, int engineFuelConsumption) {
     }
+
     public enum fuelType {PETROL, DIESEL}
 
     public int engineFuelConsumption;
