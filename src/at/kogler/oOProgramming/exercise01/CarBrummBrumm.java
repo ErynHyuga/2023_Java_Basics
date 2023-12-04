@@ -14,13 +14,14 @@ public class CarBrummBrumm {
     private CarEngine engineFuelConsumption;
     private CarTank maxFuelReserve;
     private CarTank tank;
-    public String carID;
-    public String carBrand;
-    public String carColour;
+
+    private String carID;
+    private String carBrand;
+    private String carColour;
     public int carMaxFuelReserve;
-
-    public int speed;
-
+    private int speed;
+    Scanner scanSpeeder = new Scanner(System.in);
+    public int howSpeedy = scanSpeeder.nextInt();
 
     public CarBrummBrumm(CarEngine engine, CarTank tank, String carID, String carBrand, String carColour) {
         this.engine = engine;
@@ -56,6 +57,8 @@ public class CarBrummBrumm {
         System.out.println("I Break");
     }
 
+
+
     public void carGoSuperBoostModeZefix() {
         if (carMaxFuelReserve / 10 < carFuelInStorage) {
             System.out.println("very fast");
@@ -69,7 +72,7 @@ public class CarBrummBrumm {
         System.out.println("An 'Angerenter Hund' is driving in front of you, and is slow as fuck. How many times do you want to honk at this 'Biara'");
         var scanInput = new Scanner(System.in);
         int inputHonkRepitition = Integer.parseInt(scanInput.next());
-        for (int i = 0; inputHonkRepitition >= i; i++) {
+        for (int i = 1; inputHonkRepitition >= i ; i++) {
             System.out.println("Tu-Tu-Du-Du");
         }
 
