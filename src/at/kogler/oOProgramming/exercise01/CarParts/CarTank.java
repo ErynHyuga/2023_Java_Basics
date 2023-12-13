@@ -1,4 +1,5 @@
 package at.kogler.oOProgramming.exercise01.CarParts;
+import java.util.Scanner;
 
 public class CarTank {
     public CarTank(int fuelRemaining, int maxFuelReserve) {
@@ -8,6 +9,8 @@ public class CarTank {
 
     private int fuelRemaining;
     private int maxFuelReserve;
+
+
 
     public void fuelStats(int fuelRemaining, int maxFuelReserve) {
         this.fuelRemaining = fuelRemaining;
@@ -20,10 +23,3 @@ public class CarTank {
         }
     }
 }
-/*
-Baue einen Motor und einen Tank in Dein Auto ein!
-Der Motor kann auf einer Skala von 1 bis 100 betrieben werden -
-1 ist langsam, 100 ist Vollgas.
-Baue die Methode drive() des Cars um und füge einen Parameter "speed"
-mit ein.
-*/

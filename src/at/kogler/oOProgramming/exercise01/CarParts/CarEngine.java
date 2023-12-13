@@ -8,20 +8,22 @@ public class CarEngine {
     }
 
     public enum fuelType {PETROL, DIESEL}
-
+    private CarTank fuelRemaining;
     public int tankMaxFuelReserve;
     public int tankFuelInStorage;
     private int howSpeedy;
     public int engineFuelConsumption;
     private int horsePower;
     private fuelType type;
+
     Scanner scanSpeeder = new Scanner(System.in);
-    public int gear = scanSpeeder.nextInt();
+    public int gear;
 
     public void drive() {
-        this.gear = gear;
+        System.out.println("Speedy");
+        gear = scanSpeeder.nextInt();
+
         int speed = 0;
-        System.out.println("Speedometer: " + speed);
         if (tankFuelInStorage > 0) {
             System.out.println("I'm gonna step on the gas \n" + "Gas, gas, gas");
             this.tankFuelInStorage = this.tankFuelInStorage - engineFuelConsumption;
@@ -32,6 +34,7 @@ public class CarEngine {
                     break;
                 }
             }
+            System.out.println("Speedometer: " + speed);
         } else {
             System.out.println("Car Cannot Move. Not Enough Fuel");
         }
@@ -52,5 +55,4 @@ public class CarEngine {
     public fuelType getType() {
         return type;
     }
-
 }

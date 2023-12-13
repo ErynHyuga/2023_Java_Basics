@@ -2,7 +2,9 @@ package at.kogler.oOProgramming.exercise01;
 
 import at.kogler.oOProgramming.exercise01.CarParts.CarEngine;
 import at.kogler.oOProgramming.exercise01.CarParts.CarTank;
+import at.kogler.oOProgramming.exercise01.CarParts.RearMirror;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -10,33 +12,38 @@ public class CarBrummBrumm {
 
     private List<RearMirror> mirrors;
     private int carFuelConsumption;
-    private int carFuelInStorage;
     private CarTank fuelRemaining;
     private CarEngine engine;
     private CarEngine engineFuelConsumption;
     private CarTank maxFuelReserve;
     private CarTank tank;
-
     private String carID;
     private String carBrand;
     private String carColour;
     public int carMaxFuelReserve;
-    private int speed;
 
 
-    public CarBrummBrumm(CarEngine engine, CarTank tank, String carID, String carBrand, String carColour) {
+    public CarBrummBrumm(RearMirror mirror, CarEngine engine, CarTank tank, String carID, String carBrand, String carColour) {
         this.engine = engine;
         this.tank = tank;
         this.carColour = carColour;
         this.carBrand = carBrand;
         this.carID = carID;
+        this.mirrors = new ArrayList<>();
         getCarFuelConsumption();
         getCarFuelInStorage();
         getCarMaxFuelReserve();
-
+        System.out.println(String.format("engine %s, tank %s, carColour %s, carBrand %s, carID %s, mirrors %s", engine, tank, carColour, carBrand, carID, mirrors ));
 
     }
 
+    public void addMirrors(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors(){
+        return mirrors;
+    }
     public CarEngine getCarFuelConsumption() {
         return engineFuelConsumption;
     }
