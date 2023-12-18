@@ -1,4 +1,5 @@
 package at.kogler.oOProgramming.exercise01.CarParts;
+
 import java.util.Scanner;
 
 public class CarTank {
@@ -9,7 +10,6 @@ public class CarTank {
 
     private int fuelRemaining;
     private int maxFuelReserve;
-
 
 
     public void fuelStats(int fuelRemaining, int maxFuelReserve) {

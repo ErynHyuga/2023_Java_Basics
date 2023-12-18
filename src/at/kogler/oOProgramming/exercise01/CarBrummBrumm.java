@@ -33,17 +33,19 @@ public class CarBrummBrumm {
         getCarFuelConsumption();
         getCarFuelInStorage();
         getCarMaxFuelReserve();
-        System.out.println(String.format("engine %s, tank %s, carColour %s, carBrand %s, carID %s, mirrors %s", engine, tank, carColour, carBrand, carID, mirrors ));
+        System.out.println(String.format("engine %s, tank %s, carColour %s, carBrand %s, carID %s, mirrors %s", engine, tank, carColour, carBrand, carID, mirrors));
+        this.mirrors = new ArrayList<>();
 
     }
 
-    public void addMirrors(RearMirror rearMirror){
+    public void addMirrors(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
     }
 
-    public List<RearMirror> getMirrors(){
+    public List<RearMirror> getMirrors() {
         return mirrors;
     }
+
     public CarEngine getCarFuelConsumption() {
         return engineFuelConsumption;
     }
