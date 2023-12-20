@@ -8,6 +8,7 @@ public class CarEngine {
     }
 
     public enum fuelType {PETROL, DIESEL}
+
     private CarTank fuelRemaining;
     public int tankMaxFuelReserve;
     public int tankFuelInStorage;
@@ -35,6 +36,7 @@ public class CarEngine {
                 }
             }
             System.out.println("Speedometer: " + speed);
+
         } else {
             System.out.println("Car Cannot Move. Not Enough Fuel");
         }

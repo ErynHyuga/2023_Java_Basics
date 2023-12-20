@@ -1,13 +1,25 @@
 package at.kogler.oOProgramming.exercise01.CarParts;
 
 public class RearMirror {
-    public int size;
-    public String side;
-    public int position;
+    private int size;
+    private String side;
+    private int position;
 
-    public void RearMirror(String side, int size, int position) {
+    public RearMirror(int size, String side, int position) {
+        this.size = size;
         this.side = side;
         this.position = position;
-        this.size = size;
+    }
+
+    public String getSide() {
+        return side;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public int getPosition() {
+        return position;
     }
 }

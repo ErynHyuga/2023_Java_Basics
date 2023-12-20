@@ -2,6 +2,7 @@ package at.kogler.oOProgramming.exercise01;
 
 import at.kogler.oOProgramming.exercise01.CarParts.CarEngine;
 import at.kogler.oOProgramming.exercise01.CarParts.CarTank;
+import at.kogler.oOProgramming.exercise01.CarParts.CarTyre;
 import at.kogler.oOProgramming.exercise01.CarParts.RearMirror;
 
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import java.util.Scanner;
 public class CarBrummBrumm {
 
     private List<RearMirror> mirrors;
+    private List<CarTyre> tyres;
     private int carFuelConsumption;
     private CarTank fuelRemaining;
     private CarEngine engine;
@@ -23,7 +25,7 @@ public class CarBrummBrumm {
     public int carMaxFuelReserve;
 
 
-    public CarBrummBrumm(RearMirror mirror, CarEngine engine, CarTank tank, String carID, String carBrand, String carColour) {
+    public CarBrummBrumm(RearMirror mirrorR, RearMirror mirrorL, CarTyre frontLeftWheel, CarTyre frontRightWheel, CarTyre backLeftWheel, CarTyre backRightWheel, CarEngine engine, CarTank tank, String carID, String carBrand, String carColour) {
         this.engine = engine;
         this.tank = tank;
         this.carColour = carColour;
@@ -35,7 +37,17 @@ public class CarBrummBrumm {
         getCarMaxFuelReserve();
         System.out.println(String.format("engine %s, tank %s, carColour %s, carBrand %s, carID %s, mirrors %s", engine, tank, carColour, carBrand, carID, mirrors));
         this.mirrors = new ArrayList<>();
+        this.tyres = new ArrayList<>();
+        this.mirrors.add(mirrorR);
+        this.mirrors.add(mirrorL);
+        this.tyres.add(frontLeftWheel);
+        this.tyres.add(frontRightWheel);
+        this.tyres.add(backLeftWheel);
+        this.tyres.add(backRightWheel);
+    }
 
+    public void drive(int amount) {
+        this.engine.drive();
     }
 
     public void addMirrors(RearMirror rearMirror) {
