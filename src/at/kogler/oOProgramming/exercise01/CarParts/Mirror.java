@@ -1,11 +1,11 @@
 package at.kogler.oOProgramming.exercise01.CarParts;
 
-public class RearMirror {
+public class Mirror {
     private int size;
     private String side;
     private int position;
 
-    public RearMirror(int size, String side, int position) {
+    public Mirror(int size, String side, int position) {
         this.size = size;
         this.side = side;
         this.position = position;

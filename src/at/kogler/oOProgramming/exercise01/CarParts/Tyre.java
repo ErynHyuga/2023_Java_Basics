@@ -1,11 +1,11 @@
 package at.kogler.oOProgramming.exercise01.CarParts;
 
-public class CarTyre {
+public class Tyre {
     private int profileDepth;
     private int size;
-    private int pressure;
+    private double pressure;
 
-    public CarTyre(int profileDepth, int size, double pressure) {
+    public Tyre(int profileDepth, int size, double pressure) {
         this.profileDepth = profileDepth;
         this.size = size;
         this.pressure = pressure;
@@ -19,7 +19,7 @@ public class CarTyre {
         return size;
     }
 
-    public int getPressure() {
+    public double getPressure() {
         return pressure;
     }
 }

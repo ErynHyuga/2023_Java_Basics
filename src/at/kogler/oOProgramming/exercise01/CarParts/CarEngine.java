@@ -9,7 +9,7 @@ public class CarEngine {
 
     public enum fuelType {PETROL, DIESEL}
 
-    private CarTank fuelRemaining;
+    private Tank fuelRemaining;
     public int tankMaxFuelReserve;
     public int tankFuelInStorage;
     private int howSpeedy;
