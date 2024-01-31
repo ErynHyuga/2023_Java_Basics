@@ -25,6 +25,10 @@ public class Remote {
         System.out.println("Kein Verbraucher Angeschlossen");
     }
     public void turnOn() {
+        for (Battery b: this.batteryList) {
+            int newValue = b.getStatus() - 5;
+            b.setNewStatus(newValue);
+        }
         batteryStatus -= 5;
         System.out.println(batteryStatus);
         System.out.println("Verbraucher Angeschlossen");

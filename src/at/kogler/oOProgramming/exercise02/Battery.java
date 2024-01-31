@@ -10,4 +10,8 @@ public class Battery {
     public int getStatus(){
         return batteryStatus;
     }
+
+    public void setNewStatus(int value){
+        this.batteryStatus = value;
+    }
 }
