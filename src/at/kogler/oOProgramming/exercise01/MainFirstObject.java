@@ -47,5 +47,6 @@ public class MainFirstObject {
         engine2.carGoSuperBoostModeZefix();
         engine2.drive();
 
+        System.out.println("Tank " + car1.getTank().getFuelRemaining());
     }
 }

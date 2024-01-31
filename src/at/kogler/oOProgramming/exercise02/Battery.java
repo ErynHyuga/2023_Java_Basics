@@ -1,18 +1,13 @@
 package at.kogler.oOProgramming.exercise02;
 
-public class Battery {
-    private int battaryStatus;
 
-    public Battery(int battaryStatus){
-        this.battaryStatus = battaryStatus;
+public class Battery {
+    private int batteryStatus;
+
+    public Battery(int batteryStatus){
+        this.batteryStatus = batteryStatus;
     }
     public int getStatus(){
-        return battaryStatus;
-    }
-    public String turnOff(){
-        return "Kein Verbraucher Angeschlossen";
-    }
-    public String turnOn() {
-        return "Verbraucher Angeschlossen";
+        return batteryStatus;
     }
 }
