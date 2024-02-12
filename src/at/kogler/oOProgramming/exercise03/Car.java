@@ -1,4 +1,4 @@
-package at.kogler.oOProgramming.excercise03;
+package at.kogler.oOProgramming.exercise03;
 
 public class Car {
 
