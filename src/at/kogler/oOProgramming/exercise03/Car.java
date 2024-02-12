@@ -5,11 +5,19 @@ public class Car {
     private String colour;
     private int maxSpeed;
     private int basePrice;
-    private int basisConsumption;
+    private int baseConsumption;
     private String manufacturer;
     private Engine engine;
 
-    public static void main(String[] args) {
 
+    public Car(String colour, int maxSpeed, int basePrice, int baseConsumption, String manufacturer, Engine engine){
+        this.colour = colour;
+        this.maxSpeed = maxSpeed;
+        this.basePrice = basePrice;
+        this.baseConsumption = baseConsumption;
+        this.manufacturer = manufacturer;
+        this.engine = engine;
+        
     }
+    
 }
