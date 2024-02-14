@@ -6,7 +6,7 @@ public class Car {
     private int maxSpeed;
     private int basePrice;
     private int basisConsumption;
-    private String manufacturer;
+    private Manufacturer manufacturer;
     private Engine engine;
 
     public static void main(String[] args) {
