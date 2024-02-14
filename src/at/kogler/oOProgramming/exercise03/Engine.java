@@ -1,14 +1,15 @@
 package at.kogler.oOProgramming.exercise03;
 
+import java.lang.reflect.Type;
+
 public class Engine{
 
-    private enum fuelType {PETROL, DIESEL};
+    public enum TYPE {PETROL, DIESEL};
+    private Type type;
     private int pOWER;
 
-    public Engine(int pOWER, fuelType fuelType, int engineFuelConsumption) {
+    public Engine(int pOWER, TYPE type) {
         this.pOWER = pOWER;
-        this.fuelType = fuelType;
-        this.engineFuelConsumption = engineFuelConsumption;
-    }
-
+        this.type = type;
+        }
 }
