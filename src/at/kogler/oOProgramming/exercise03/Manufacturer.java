@@ -10,6 +10,8 @@ public class Manufacturer {
         this.name = name;
         this.origin = origin;
         this.discount = discount;
+
+
     }
 
     public String getName() {

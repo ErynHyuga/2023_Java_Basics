@@ -10,6 +10,7 @@ public class Engine{
 
     public Engine(int pOWER, TYPE type) {
         this.pOWER = pOWER;
-        this.type = type;
-        }
+
+    }
+
 }

@@ -45,4 +45,5 @@ public class Car {
     public int getPrice() {
         return price;
     }
+
 }
