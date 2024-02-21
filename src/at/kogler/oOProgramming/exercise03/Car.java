@@ -25,18 +25,18 @@ public class Car {
         this.baseConsumption = baseConsumption;
         this.engine = engine;
         this.manufacturer = manufacturer;
-
-        this.price = (int) (this.basePrice - (this.manufacturer.getDiscount() * this.basePrice));
-
+        discount();
         if (this.kmCounter < 50000){
             this.baseConsumption = this.baseConsumption;
         }
         else {
             this.baseConsumption = this.baseConsumption * 1.098;
         }
-
     }
-
+    public void discount() {
+        double newPrice = this.basePrice * this.manufacturer.getDiscount();
+        System.out.println("New price for the car: " + newPrice);
+    }
 
     public double getBaseConsumption() {
         return baseConsumption;
