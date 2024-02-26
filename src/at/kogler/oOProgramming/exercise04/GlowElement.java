@@ -6,11 +6,25 @@ public class GlowElement {
     private int energieConsumption;
     private boolean status;
 
-    public GlowElement(String name, String colour, int energieConsumption, boolean status) {
+    public GlowElement(String name, String colour, int energieConsumption) {
         this.name = name;
         this.colour = colour;
         this.energieConsumption = energieConsumption;
-        this.status = status;
+    }
+
+    public void turnOff() {
+        status = false;
+    }
+    int sum = 0;
+    public void turnAllOn() {
+
+        if (!status) {
+            status = true;
+            System.out.println("Setting light on fire (WARNING: This is a dangerous action and should not be attempted in real life!)");
+            energieConsumption += 5;
+        } else {
+            System.out.println("I'm " + name + ", Shining Bright as the Suns Fyre");
+        }
     }
 
     public String getName() {

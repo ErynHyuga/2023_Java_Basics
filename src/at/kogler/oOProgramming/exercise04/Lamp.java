@@ -8,8 +8,27 @@ import java.util.List;
 public class Lamp {
     private List<GlowElement> glowElementsList;
 
-    public Lamp(List<GlowElement> glowElementsList) {
-        this.glowElementsList = glowElementsList;
-        
+    public Lamp() {
+        this.glowElementsList = new ArrayList<>();
     }
+
+    public void addGlowElement(GlowElement glowElement){
+        this.glowElementsList.add(glowElement);
+    }
+    public String printNamesOfLightElement(GlowElement glowElement){
+
+        return glowElement.getName();
+    }
+
+
 }
+
+/*
+private List<Tyre> tyres;
+
+this.tyres = new ArrayList<>();
+
+public void addTyre(Tyre tyre){
+    this.tyres.add(tyre);
+}
+ */

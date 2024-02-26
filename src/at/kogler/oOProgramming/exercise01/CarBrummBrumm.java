@@ -56,7 +56,7 @@ public class CarBrummBrumm {
         this.mirrors.add(rearMirror);
     }
 
-    public List<Mirror> getMirrors() {
+      public List<Mirror> getMirrors() {
         return mirrors;
     }
 
