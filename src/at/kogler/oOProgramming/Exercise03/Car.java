@@ -1,4 +1,4 @@
-package at.kogler.oOProgramming.exercise03;
+package at.kogler.oOProgramming.Exercise03;
 
 public class Car {
     private int kmCounter;

@@ -1,4 +1,4 @@
-package at.kogler.oOProgramming.exercise01.CarParts;
+package at.kogler.oOProgramming.Exercise01.CarParts;
 
 import java.util.Scanner;
 

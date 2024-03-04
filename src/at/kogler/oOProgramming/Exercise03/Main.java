@@ -1,8 +1,4 @@
-package at.kogler.oOProgramming.exercise03;
-
-import at.kogler.oOProgramming.exercise03.Manufacturer;
-import at.kogler.oOProgramming.exercise03.Car;
-import at.kogler.oOProgramming.exercise03.Engine;
+package at.kogler.oOProgramming.Exercise03;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package at.kogler.oOProgramming.exercise02;
+package at.kogler.oOProgramming.Exercise02;
 
 import java.util.List;
 import java.util.ArrayList;

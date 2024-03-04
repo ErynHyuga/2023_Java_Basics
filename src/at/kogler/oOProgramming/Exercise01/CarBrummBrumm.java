@@ -1,9 +1,9 @@
-package at.kogler.oOProgramming.exercise01;
+package at.kogler.oOProgramming.Exercise01;
 
-import at.kogler.oOProgramming.exercise01.CarParts.CarEngine;
-import at.kogler.oOProgramming.exercise01.CarParts.Tank;
-import at.kogler.oOProgramming.exercise01.CarParts.Tyre;
-import at.kogler.oOProgramming.exercise01.CarParts.Mirror;
+import at.kogler.oOProgramming.Exercise01.CarParts.CarEngine;
+import at.kogler.oOProgramming.Exercise01.CarParts.Tank;
+import at.kogler.oOProgramming.Exercise01.CarParts.Tyre;
+import at.kogler.oOProgramming.Exercise01.CarParts.Mirror;
 
 import java.util.ArrayList;
 import java.util.List;
