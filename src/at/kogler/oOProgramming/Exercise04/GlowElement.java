@@ -1,42 +1,38 @@
-package at.kogler.oOProgramming.exercise04;
+package at.kogler.oOProgramming.Exercise04;
 
 public class GlowElement {
-    private String name;
+    public static boolean getStatus;
+    public static String name;
+    public static int getEnergieConsumption;
     private String colour;
     private int energieConsumption;
     private boolean status;
 
     public GlowElement(String name, String colour, int energieConsumption) {
-        this.name = name;
+        name = this.name;
         this.colour = colour;
         this.energieConsumption = energieConsumption;
+
     }
 
-    public void turnOff() {
-        status = false;
-    }
-    int sum = 0;
+
+
     public void turnAllOn() {
-
         if (!status) {
             status = true;
-            System.out.println("Setting light on fire (WARNING: This is a dangerous action and should not be attempted in real life!)");
+            System.out.println(name + " is setting light on fire");
             energieConsumption += 5;
         } else {
             System.out.println("I'm " + name + ", Shining Bright as the Suns Fyre");
         }
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getColour() {
         return colour;
+    }
+
+    public static String getName() {
+        return name;
     }
 
     public void setColour(String colour) {
@@ -44,6 +40,7 @@ public class GlowElement {
     }
 
     public int getEnergieConsumption() {
+        System.out.println(energieConsumption);
         return energieConsumption;
     }
 
@@ -51,7 +48,7 @@ public class GlowElement {
         this.energieConsumption = energieConsumption;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
