@@ -1,9 +1,7 @@
 package at.kogler.oOProgramming.Exercise04;
 
 public class GlowElement {
-    public static boolean getStatus;
-    public static String name;
-    public static int getEnergieConsumption;
+
     private String colour;
     private int energieConsumption;
     private boolean status;
@@ -17,7 +15,7 @@ public class GlowElement {
 
 
 
-    public void turnAllOn() {
+    public void turnOn() {
         if (!status) {
             status = true;
             System.out.println(name + " is setting light on fire");
@@ -55,4 +53,5 @@ public class GlowElement {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
 }

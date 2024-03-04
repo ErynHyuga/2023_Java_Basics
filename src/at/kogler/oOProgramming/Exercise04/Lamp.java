@@ -14,12 +14,11 @@ public class Lamp {
 
     }
 
-    public int getTotalEnergyConsumption() {
+    public void getTotalEnergyConsumption() {
         int totalEnergyConsumption = 0;
         for (GlowElement glowElement : glowElementsList) {
             totalEnergyConsumption += glowElement.getEnergieConsumption();
         }
-        return totalEnergyConsumption;
     }
 
     public void addGlowElement(GlowElement glowElement){
@@ -30,20 +29,23 @@ public class Lamp {
         return glowElement.getName();
     }
     public void turnAllOn() {
-        if (!GlowElement.getStatus) {
-            GlowElement.getStatus = true;
-            System.out.println(GlowElement.name + " is setting light on fire");
-            GlowElement.getEnergieConsumption += 5;
-        } else {
-            System.out.println("I'm " + GlowElement.name + ", Shining Bright as the Suns Fyre");
+        for (GlowElement glowElement : glowElementsList) {
+            glowElement.turnOn();
+            if (!GlowElement.getStatus) {
+                GlowElement.getStatus = true;
+                System.out.println(GlowElement.name + " is setting light on fire");
+                GlowElement.getEnergieConsumption += 5;
+            } else {
+                System.out.println("I'm " + GlowElement.name + ", Shining Bright as the Suns Fyre");
+            }
         }
-    }
-    public void turnOff() {
-        if (!GlowElement.getStatus) {
-            GlowElement.getStatus = true;
-            System.out.println(GlowElement.name + " going dark");
-        } else {
-            System.out.println(GlowElement.getName() + " already sleeping");
+        public void turnOff () {
+            if (!GlowElement.getStatus) {
+                GlowElement.getStatus = true;
+                System.out.println(GlowElement.name + " going dark");
+            } else {
+                System.out.println(GlowElement.getName() + " already sleeping");
+            }
         }
     }
 
