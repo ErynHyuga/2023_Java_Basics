@@ -39,12 +39,13 @@ public class Lamp {
                 System.out.println("I'm " + GlowElement.name + ", Shining Bright as the Suns Fyre");
             }
         }
-        public void turnOff () {
-            if (!GlowElement.getStatus) {
-                GlowElement.getStatus = true;
+
+    public void turnOff(GlowElement name) {
+        if (!GlowElement.getStatus) {
+            GlowElement.getStatus = true;
                 System.out.println(GlowElement.name + " going dark");
-            } else {
-                System.out.println(GlowElement.getName() + " already sleeping");
+        } else {
+            System.out.println(GlowElement.getName() + " already sleeping");
             }
         }
     }

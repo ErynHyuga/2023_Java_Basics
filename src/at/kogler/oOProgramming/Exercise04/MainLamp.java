@@ -10,7 +10,7 @@ public class MainLamp {
         lamp.addGlowElement(g1);
         lamp.addGlowElement(g2);
         lamp.addGlowElement(g3);
-        lamp.turnOff();
+        lamp.turnOff(g1);
         lamp.turnAllOn(g1);
 
         g1.getEnergieConsumption();

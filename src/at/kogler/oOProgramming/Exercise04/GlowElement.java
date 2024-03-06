@@ -5,6 +5,7 @@ public class GlowElement {
     private String colour;
     private int energieConsumption;
     private boolean status;
+    private String name;
 
     public GlowElement(String name, String colour, int energieConsumption) {
         name = this.name;
@@ -15,21 +16,12 @@ public class GlowElement {
 
 
 
-    public void turnOn() {
-        if (!status) {
-            status = true;
-            System.out.println(name + " is setting light on fire");
-            energieConsumption += 5;
-        } else {
-            System.out.println("I'm " + name + ", Shining Bright as the Suns Fyre");
-        }
-    }
 
     public String getColour() {
         return colour;
     }
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
