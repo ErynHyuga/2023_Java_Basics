@@ -5,18 +5,15 @@ import java.util.Scanner;
 
 public class RootCalculator extends Calculator{
 
-    public double exp(double a){
-        Math.exp(a);
+
+    public double root(double a){
+        Math.sqrt(a);
         return a;
     }
-    public double root(double b){
-        Math.sqrt(b);
+
+    public double exp(double b){
+        Math.exp(b);
         return b;
     }
 
-    Scanner fIntake = new Scanner(System.in);
-    Scanner secondIntake = new Scanner(System.in);
-
-    int a = fIntake.nextInt();
-    int b = secondIntake.nextInt();
 }
