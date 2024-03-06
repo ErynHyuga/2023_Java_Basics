@@ -28,27 +28,7 @@ public class Lamp {
 
         return glowElement.getName();
     }
-    public void turnAllOn() {
-        for (GlowElement glowElement : glowElementsList) {
-            glowElement.turnOn();
-            if (!GlowElement.getStatus) {
-                GlowElement.getStatus = true;
-                System.out.println(GlowElement.name + " is setting light on fire");
-                GlowElement.getEnergieConsumption += 5;
-            } else {
-                System.out.println("I'm " + GlowElement.name + ", Shining Bright as the Suns Fyre");
-            }
-        }
 
-    public void turnOff(GlowElement name) {
-        if (!GlowElement.getStatus) {
-            GlowElement.getStatus = true;
-                System.out.println(GlowElement.name + " going dark");
-        } else {
-            System.out.println(GlowElement.getName() + " already sleeping");
-            }
-        }
-    }
 
 
 }

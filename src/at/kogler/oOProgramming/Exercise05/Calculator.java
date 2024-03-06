@@ -1,11 +1,7 @@
 package at.kogler.oOProgramming.Exercise05;
-import java.util.Scanner;
-public class Calculator {
-    Scanner fIntake = new Scanner(System.in);
-    Scanner secondIntake = new Scanner(System.in);
 
-    int a = fIntake.nextInt();
-    int b = secondIntake.nextInt();
+public class Calculator {
+
     public double add(double a, double b){
         return a + b;
     }
