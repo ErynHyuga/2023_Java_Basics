@@ -8,6 +8,8 @@ public class SIM {
         this.id = id;
         this.number = number;
     }
-
+    public void viennaCalling(String number){
+        System.out.println("calling Number" + number);
+    }
 
 }

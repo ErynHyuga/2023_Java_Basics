@@ -10,4 +10,13 @@ public class PhoneFile {
         this.size = size;
         this.name = name;
     }
+
+    public String[] getInfo(){
+        return new String[]{name, extension,String.valueOf(size) };
+
+    }
+
+    public int getSize() {
+        return size;
+    }
 }
