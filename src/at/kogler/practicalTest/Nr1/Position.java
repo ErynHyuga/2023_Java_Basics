@@ -16,4 +16,4 @@ public class Position {
     public int getLattitude() {
         return lattitude;
     }
-}
+}//

@@ -10,7 +10,7 @@ public class Plane {
     Position position;
     String message;
     private String messageFromTower;
-
+//
 
     public Plane(String planeName, Position position) {
         this.planeName = planeName;

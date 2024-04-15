@@ -1,6 +1,6 @@
 package at.kogler.practicalTest.Nr1;
 
-public class Main {
+public class Main {//
     public static void main(String[] args) {
         Position pos1 = new Position(10, 2000);
         Plane plane177 = new Plane("Al-QuaedaAirlines", pos1);

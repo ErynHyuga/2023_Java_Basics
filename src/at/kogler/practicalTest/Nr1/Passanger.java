@@ -4,7 +4,7 @@ package at.kogler.practicalTest.Nr1;
 public class Passanger {
     private String fName;
     private String lName;
-
+//
     String messageFromTower;
     private String message;
 
