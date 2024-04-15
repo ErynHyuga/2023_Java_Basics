@@ -2,13 +2,44 @@ package at.kogler.oOProgramming.Exercise06;
 
 public class Phone {
     private String colour;
+    Camera camera;
+    PhoneFile phoneFile;
+    SIM sim;
+    SDCard sdCard;
+
+    public Phone(String colour, Camera camera, PhoneFile phoneFile, SIM sim, SDCard sdCard) {
+        this.colour = colour;
+        this.camera = camera;
+        this.phoneFile = phoneFile;
+        this.sim = sim;
+        this.sdCard = sdCard;
+    }
+
+    public void doPicture(String name, String extension) {
+        PhoneFile pic = camera.savePicture(name, extension);
+        if (pic.getSize() < sdCard.getRemainingSpace() && sdCard != null) {
+            sdCard.saveFile(pic);
+        } else if (pic.getSize() > sdCard.getRemainingSpace()) {
+            System.out.println("Get me more of those bits");
+        }
+    }
+
+    public int getRemainingSpace() {
+        return sdCard.getRemainingSpace();
+    }
+
+    public void giveOutEveryFile() {
+        for (PhoneFile phonefile : sdCard.getFileList()) {
+            for (String print : phonefile.getInfo()) {
+                System.out.println(phonefile.getInfo() + ".");
+            }
+        }
+    }
 
 }
 /*
-Wir bauen ein modulares Handy, bei dem diverse Komponenten getauscht werden können.
-Ein Handy hat einen  eine Kamera, eine Sim-Karte und eine Speicherkarte.
+
 Auf der Speicherkarte können Files gespeichert werden. Die Komponenten können ausgetauscht werden.
-Die id und die Telefonnummer der Sim Karte können nicht geändert werden.
 Wenn ein Photo gemacht wird - gibt das Telefon die Aufforderung an die Kamera weiter -
 diese liefert das Photofile zurück und das Telefon muss das File auf die SD-Karte speichern.
 Fotos können nur gemacht werden, wenn noch genug freier Platz zur Verfügung steht.
