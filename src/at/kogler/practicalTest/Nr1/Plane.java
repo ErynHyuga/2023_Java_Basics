@@ -10,7 +10,6 @@ public class Plane {
     Position position;
     String message;
     private String messageFromTower;
-//
 
     public Plane(String planeName, Position position) {
         this.planeName = planeName;
@@ -27,9 +26,15 @@ public class Plane {
         this.passangerList.add(passanger);
     }
 
-    public void giveOutPassengars() {
+    public void informPessangers(String message) {
         for (Passanger passanger : passangerList) {
-            System.out.println(passanger.getfName() + " " + passanger.getlName());
+            passanger.inform(message);
+        }
+    }
+    public void printPassangers() {
+        for (Passanger passanger :
+                passangerList) {
+            System.out.println( );
         }
     }
 

@@ -15,9 +15,9 @@ public class Main {//
         plane177.addPassengar(pas1);
         plane177.addPassengar(pas3);
 
-        plane177.giveOutPassengars();
-        pas2.inform();
-
+//        plane177.informPessangers("sddffaadfd");
+        flightC1.informPeopleOnMyPlanes("Alles Tutti Habera");
+        pos1.getPosition();
 
 
     }

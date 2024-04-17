@@ -8,7 +8,6 @@ public class TrafficController {
     private List<Plane> planeList;
 
 
-
     public TrafficController(int flightControllNr) {
         this.flightControllNr = flightControllNr;
         this.planeList = new ArrayList<>();
@@ -27,8 +26,10 @@ public class TrafficController {
         return flightControllNr;
     }
 
-    public String getMessage() {
-        return message;
+    public void informPeopleOnMyPlanes(String message) {
+        for (Plane plane : planeList) {
+            plane.informPessangers(message);
+        }
     }
+
 }
-//

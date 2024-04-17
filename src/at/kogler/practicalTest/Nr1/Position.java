@@ -16,4 +16,7 @@ public class Position {
     public int getLattitude() {
         return lattitude;
     }
-}//
+    public void getPosition(){
+        System.out.println("Längengrade: " + getLattitude() + "; Breitengrad" + getLongitude());
+    }
+}

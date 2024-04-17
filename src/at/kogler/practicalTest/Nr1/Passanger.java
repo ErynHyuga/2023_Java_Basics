@@ -26,7 +26,7 @@ public class Passanger {
         return message;
     }
 
-    protected void inform() {
+    protected void inform(String message) {
         System.out.println("Ich bin" + " " + fName + " " + lName + ", man sagte mir:" + message);
     }
 
